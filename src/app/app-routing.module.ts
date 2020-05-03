@@ -6,24 +6,27 @@ import { HomeComponent } from './home/home.component';
 import { FilmsComponent } from './films/films.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 //import { VehiclesComponent } from './vehicles/vehicles.component'; // actualmente con conflictos
+/* import { VehiclesComponent } from './vehicles/vehicles.component';  */
+import { PeopleInternalComponent } from './people/people-internal/people-internal.component';
+
 
 
 const routes: Routes = [
   /**
    *   RUTAS COMPONENTES , VISTAS INICIALES
    */
-
-  
   {path: 'starships', component: StarshipsComponent},
   {path: 'people', component: PeopleComponent },
   {path: 'films', component: FilmsComponent},
   {path: 'vehicles', component: VehiclesComponent},
   // {path: 'vehicles', component: VehiclesComponent}, // actualmente con conflictos
+ /*  {path: 'vehicles', component: VehiclesComponent},  */
+
 
   /**
    * RUTAS COMPONENTES , VISTAS INTERNAS
    */
-
+  {path: 'people-internal:/character', component: PeopleInternalComponent},
 
    /**
     * RUTAS AL HOME
@@ -31,7 +34,7 @@ const routes: Routes = [
 
   {path: '', component: HomeComponent },// ruta al home
   {path: '**', component: HomeComponent}, // envia al home si no encuentra la ruta
-  //{path: '', redirecTo:'/home', pathMatch: 'full'}
+  {path: '', redirectTo :'/fims', pathMatch: 'full'}
 
 
 ];
