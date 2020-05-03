@@ -4,6 +4,7 @@ import { PeopleComponent } from './people/people.component';
 import { StarshipsComponent } from './starships/starships.component';
 import { HomeComponent } from './home/home.component';
 import { FilmsComponent } from './films/films.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
 //import { VehiclesComponent } from './vehicles/vehicles.component'; // actualmente con conflictos
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'starships', component: StarshipsComponent},
   {path: 'people', component: PeopleComponent },
   {path: 'films', component: FilmsComponent},
+  {path: 'vehicles', component: VehiclesComponent},
   // {path: 'vehicles', component: VehiclesComponent}, // actualmente con conflictos
 
   /**
