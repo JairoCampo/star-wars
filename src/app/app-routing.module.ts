@@ -5,8 +5,6 @@ import { StarshipsComponent } from './starships/starships.component';
 import { HomeComponent } from './home/home.component';
 import { FilmsComponent } from './films/films.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
-//import { VehiclesComponent } from './vehicles/vehicles.component'; // actualmente con conflictos
-/* import { VehiclesComponent } from './vehicles/vehicles.component';  */
 import { PeopleInternalComponent } from './people/people-internal/people-internal.component';
 
 
@@ -19,9 +17,7 @@ const routes: Routes = [
   {path: 'people', component: PeopleComponent },
   {path: 'films', component: FilmsComponent},
   {path: 'vehicles', component: VehiclesComponent},
-  // {path: 'vehicles', component: VehiclesComponent}, // actualmente con conflictos
- /*  {path: 'vehicles', component: VehiclesComponent},  */
-
+ 
 
   /**
    * RUTAS COMPONENTES , VISTAS INTERNAS
